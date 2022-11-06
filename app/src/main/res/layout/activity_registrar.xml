@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Registrar"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/button1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="35dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/buslog" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registro Empresa"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_Login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:onClick="OnClick"
+                        android:text="Login"
+                        android:textColor="@color/teal_200"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edt_IdEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Id de empresa "
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:drawableStart="@drawable/ic_key_log"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/edt_NomEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Nombre de la empresa"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/ic_baseline_person_pin_24"/>
+
+                <EditText
+                    android:id="@+id/edt_NumEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Numero de la empresa"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:inputType="number"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"/>
+
+                <EditText
+                    android:id="@+id/edt_correoEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Correo Electronico"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/ic_email"/>
+
+                <EditText
+                    android:id="@+id/edt_direccionEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint=" Dirección"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/ic_baseline_add_location_alt_24"/>
+
+                <EditText
+                    android:id="@+id/edt_codigoP"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:background="@drawable/textverde"
+                    android:hint=" Codigo Postal"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:drawableStart="@drawable/ic_baseline_search_24"/>
+                <EditText
+                    android:id="@+id/edt_claveEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:background="@drawable/textverde"
+                    android:hint="Contraseña"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_clave"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_registrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button"
+                    android:onClick="OnClick"
+                    android:text="Registrate"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Volver"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button"
+                    android:onClick="OnClick"
+                    android:text="VOLVER"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="30dp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
