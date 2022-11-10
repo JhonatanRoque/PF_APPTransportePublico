@@ -3,6 +3,7 @@ package com.fjar.trasnportfast.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fjar.trasnportfast.R;
@@ -18,7 +20,8 @@ import com.fjar.trasnportfast.ui.empresa.dto_empresa;
 import com.fjar.trasnportfast.ui.empresa.empresaCRUD;
 
 public class Registrar extends AppCompatActivity {
-    private Button btnRegistrar, btnvolver;
+    private Button btnRegistrar;
+    private TextView login;
     private EditText nombre, telefono, correo, direccion, CP, clave;
     private empresaCRUD CRUD = new empresaCRUD();
     private dto_empresa dtoEmpresa = new dto_empresa();
@@ -36,7 +39,15 @@ public class Registrar extends AppCompatActivity {
         CP = (EditText) findViewById(R.id.edt_codigoP);
         clave = (EditText) findViewById(R.id.edt_claveEmp);
         btnRegistrar = (Button) findViewById(R.id.btn_registrar);
+        login = (TextView) findViewById(R.id.btn_Login);
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
+        });
 
 
 

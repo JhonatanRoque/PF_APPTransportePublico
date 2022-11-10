@@ -33,10 +33,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super
                 .onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);empresa = new dto_empresa();
-
-        Intent nueva = new Intent(Login.this, MainActivity.class);
-        startActivity(nueva);
+        setContentView(R.layout.activity_login);
+        empresa = new dto_empresa();
         //Instanciamos nuestros componentes
         Nempresa = (EditText) findViewById(R.id.etuser);
         contrasena = (EditText) findViewById(R.id.etclave);
