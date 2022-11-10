@@ -4,30 +4,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.EditText;
-=======
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
->>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
 
 import com.fjar.trasnportfast.R;
+import com.fjar.trasnportfast.ui.empresa.dto_empresa;
+import com.fjar.trasnportfast.ui.empresa.empresaCRUD;
 
 public class Registrar extends AppCompatActivity {
-<<<<<<< HEAD
-    private EditText nombre, telefono, correo, direccion, codigoPostal, contrasena;
     private Button btnRegistrar, btnvolver;
-=======
     private EditText nombre, telefono, correo, direccion, CP, clave;
-    private Button btnRegistrar;
-    private EmpresaCRUD CRUD = new EmpresaCRUD();
+    private empresaCRUD CRUD = new empresaCRUD();
     private dto_empresa dtoEmpresa = new dto_empresa();
->>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -38,12 +32,7 @@ public class Registrar extends AppCompatActivity {
         telefono = (EditText) findViewById(R.id.edt_NumEmp);
         correo = (EditText) findViewById(R.id.edt_correoEmp);
         direccion = (EditText) findViewById(R.id.edt_direccionEmp);
-<<<<<<< HEAD
-        codigoPostal = (EditText) findViewById(R.id.edt_codigoP);
-        contrasena = (EditText) findViewById(R.id.edt_claveEmp);
 
-
-=======
         CP = (EditText) findViewById(R.id.edt_codigoP);
         clave = (EditText) findViewById(R.id.edt_claveEmp);
         btnRegistrar = (Button) findViewById(R.id.btn_registrar);
@@ -79,6 +68,5 @@ public class Registrar extends AppCompatActivity {
                 }
             }
         });
->>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
     }
 }

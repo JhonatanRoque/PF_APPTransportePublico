@@ -1,9 +1,8 @@
 package com.fjar.trasnportfast;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
+
+
 import android.content.Context;
 import android.graphics.Bitmap;
 
@@ -66,7 +65,3 @@ public class MySingleton {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
