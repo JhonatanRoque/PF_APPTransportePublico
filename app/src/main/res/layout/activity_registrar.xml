@@ -62,16 +62,6 @@
                         android:textStyle="bold" />
                 </RelativeLayout>
 
-                <EditText
-                    android:id="@+id/edt_IdEmp"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint=" Id de empresa "
-                    android:layout_marginTop="20dp"
-                    android:padding="10dp"
-                    android:background="@drawable/textverde"
-                    android:drawableStart="@drawable/ic_key_log"
-                    android:inputType="phone" />
 
                 <EditText
                     android:id="@+id/edt_NomEmp"
@@ -151,16 +141,7 @@
                     android:text="Registrate"
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_Volver"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="32dp"
-                    android:background="@drawable/button"
-                    android:onClick="OnClick"
-                    android:text="VOLVER"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"

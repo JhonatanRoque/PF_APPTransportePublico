@@ -44,7 +44,7 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/btnRegistrarUsuario"
+                    android:id="@+id/btnRegistrarEmp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
