@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+    android:label="na"
     app:startDestination="@+id/nav_home">
 
     <fragment
@@ -22,4 +23,9 @@
         android:name="com.fjar.trasnportfast.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_conductor"
+        android:name="com.fjar.trasnportfast.ui.conductor.Conductor"
+        android:label="conductor_fragment"
+        tools:layout="@layout/fragment_conductor" />
 </navigation>
