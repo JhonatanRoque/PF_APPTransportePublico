@@ -15,6 +15,9 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
 
+    <string name="google_maps_key">AIzaSyB80g4vFxONAvn1HnngyBevhH4ZZZtwDKY</string>
+
+
     <string-array name="listaRutasspinner">
         <item>Seleccione una Ruta</item>
     </string-array>
