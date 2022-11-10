@@ -28,8 +28,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);empresa = new dto_empresa();
 
-                    Intent nueva = new Intent(Login.this, MainActivity.class);
-                    startActivity(nueva);
+        Intent nueva = new Intent(Login.this, MainActivity.class);
+        startActivity(nueva);
         //Instanciamos nuestros componentes
         Nempresa = (EditText) findViewById(R.id.etuser);
         contrasena = (EditText) findViewById(R.id.etclave);
@@ -58,20 +58,18 @@ public class Login extends AppCompatActivity {
                     Nempresa.setError("Campo obligatorio");
                 }else if(contra.length() == 0){
                     contrasena.setError("Campo obligatorio");
-                    }else{
-                        empresa.setNombre(usu);
-                    }
-                    empresa.setClave(contra);
+                }else{
+                    empresa.setNombre(usu);
+                }
+                empresa.setClave(contra);
 
-                    CRUD.IniciarSesionemp(Login.this, empresa, holdSession);
+                CRUD.IniciarSesionemp(Login.this, empresa, holdSession);
 
-                        Intent nueva = new Intent(Login.this, MainActivity.class);
-                        startActivity(nueva);
-                    }
+                Intent nueva = new Intent(Login.this, MainActivity.class);
+                startActivity(nueva);
+            }
 
 
         });
-                }
+    }
 }
-
-

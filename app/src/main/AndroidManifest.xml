@@ -12,7 +12,17 @@
         android:theme="@style/Theme.TrasnportFast"
         tools:targetApi="31">
         <activity
+
             android:name=".ui.Login"
+            android:exported="false" />
+
+            android:name=".recuperacionContra"
+            android:exported="false" />
+        <activity
+            android:name=".Tipo"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio_app"
             android:exported="false" />
 
         <activity
@@ -31,8 +41,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false"

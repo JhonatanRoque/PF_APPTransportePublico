@@ -95,7 +95,7 @@ public class SplahScreenActivity extends AppCompatActivity {
          public void run (){
              try {
                  sleep(3000);
-                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                 Intent intent = new Intent(getApplicationContext(), Inicio_app.class);
                  startActivity(intent);
              }catch (InterruptedException e){
                  e.printStackTrace();
