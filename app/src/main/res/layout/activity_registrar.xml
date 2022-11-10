@@ -59,15 +59,30 @@
                         android:text="Login"
                         android:textColor="@color/teal_200"
                         android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </RelativeLayout>
 
+
+<<<<<<< HEAD
+=======
+                <EditText
+                    android:id="@+id/edt_IdEmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint=" Id de empresa "
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:drawableStart="@drawable/ic_key_log"
+                    android:inputType="phone" />
+>>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
 
 
                 <EditText
                     android:id="@+id/edt_NomEmp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="48dp"
                     android:hint=" Nombre de la empresa"
                     android:layout_marginTop="20dp"
                     android:padding="10dp"
@@ -78,7 +93,7 @@
                 <EditText
                     android:id="@+id/edt_NumEmp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="48dp"
                     android:hint=" Numero de la empresa"
                     android:layout_marginTop="20dp"
                     android:padding="10dp"
@@ -89,18 +104,18 @@
                 <EditText
                     android:id="@+id/edt_correoEmp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint=" Correo Electronico"
+                    android:layout_height="48dp"
                     android:layout_marginTop="20dp"
-                    android:padding="10dp"
                     android:background="@drawable/textverde"
+                    android:drawableStart="@drawable/ic_email"
+                    android:hint=" Correo Electronico"
                     android:inputType="textEmailAddress"
-                    android:drawableStart="@drawable/ic_email"/>
+                    android:padding="10dp" />
 
                 <EditText
                     android:id="@+id/edt_direccionEmp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="48dp"
                     android:hint=" Dirección"
                     android:layout_marginTop="20dp"
                     android:padding="10dp"
@@ -111,7 +126,7 @@
                 <EditText
                     android:id="@+id/edt_codigoP"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="48dp"
                     android:ems="10"
                     android:background="@drawable/textverde"
                     android:hint=" Codigo Postal"
@@ -119,29 +134,31 @@
                     android:padding="10dp"
                     android:inputType="number"
                     android:drawableStart="@drawable/ic_baseline_search_24"/>
+
                 <EditText
                     android:id="@+id/edt_claveEmp"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:ems="10"
-                    android:background="@drawable/textverde"
-                    android:hint="Contraseña"
+                    android:layout_height="48dp"
                     android:layout_marginTop="20dp"
-                    android:padding="10dp"
+                    android:background="@drawable/textverde"
+                    android:drawableStart="@drawable/ic_clave"
+                    android:ems="10"
+                    android:hint="Contraseña"
                     android:inputType="textPassword"
-                    android:drawableStart="@drawable/ic_clave"/>
+                    android:padding="10dp" />
 
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_registrar"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/button"
 
                     android:text="Registratar empresa"
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
+<<<<<<< HEAD
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_Volver"
                     android:layout_width="match_parent"
@@ -152,6 +169,9 @@
                     android:text="VOLVER"
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
+=======
+
+>>>>>>> 511e2a2de768787a19021178f6b1bf5c731e5583
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"

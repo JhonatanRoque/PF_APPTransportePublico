@@ -12,17 +12,23 @@
         android:theme="@style/Theme.TrasnportFast"
         tools:targetApi="31">
         <activity
+
+            android:name=".ui.Login"
+            android:exported="false" />
+
+            android:name=".recuperacionContra"
+            android:exported="false" />
+        <activity
             android:name=".Tipo"
             android:exported="false" />
         <activity
             android:name=".Inicio_app"
             android:exported="false" />
+
         <activity
             android:name=".ui.Registrar"
             android:exported="false" />
-        <activity
-            android:name=".ui.Login"
-            android:exported="false" />
+
         <activity
             android:name=".SplahScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
