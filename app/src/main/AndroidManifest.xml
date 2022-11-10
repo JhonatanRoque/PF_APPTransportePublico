@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TrasnportFast"
         tools:targetApi="31">
         <activity
+            android:name=".recuperacionContra"
+            android:exported="false" />
+        <activity
             android:name=".Tipo"
             android:exported="false" />
         <activity
