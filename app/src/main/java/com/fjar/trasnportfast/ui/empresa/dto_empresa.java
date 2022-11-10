@@ -1,4 +1,4 @@
-package com.fjar.trasnportfast.ui;
+package com.fjar.trasnportfast.ui.empresa;
 
 public class dto_empresa {
     int id_empresa;
